@@ -2,13 +2,28 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Cotizador de Seguros QUALYTAS</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Calculadora de Seguros QUALYTAS</title>
+    <link rel="stylesheet" href="styles.cotizador.seguros.css">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="container">
-        <h1>Cotizador de Seguros QUALYTAS</h1>
-        <button id="cotizarBtn">Cotizar Seguro</button>
+        <div class="logo">
+            <img src="images/logo.png" alt="Logo Seguros QUALYTAS">
+        </div>
+        <h1>Calculadora de Seguros QUALYTAS</h1>
+        <form id="insuranceForm">
+            <label for="plan">Selecciona tu plan:</label>
+            <select id="plan">
+                <option value="Bronce">Bronce</option>
+                <option value="Plata">Plata</option>
+                <option value="Oro">Oro</option>
+            </select>
+            <label for="age">Edad del asegurado:</label>
+            <input type="number" id="age" min="18" max="99">
+            <button type="button" id="calculateButton">Calcular Seguro</button>
+        </form>
+        <div id="result"></div>
     </div>
     <script src="cotizador.seguros.PreEntrega1+Ruben.js"></script>
 </body>
